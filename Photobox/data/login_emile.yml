@@ -1,0 +1,11 @@
+emile:
+  - '928236974@qq.com'
+qq:
+  - '928236974'
+bad_format:
+  - '123456789.com'
+  - '123456789@'
+  - '123456789@.com'
+  - '@qq.com'
+wrong_char_type:
+  - '啊@qq.com'
