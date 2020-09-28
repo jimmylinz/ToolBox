@@ -19,12 +19,14 @@ class TestLogin:
     def teardown_class(self):
         self.app.close()
 
+    def test_login(self):
+        self.login.goto_login_first()
+
 #登陆用例
-    #第一次安装APP，第一次登录用例
-    @pytest.mark.parametrize('emile',emlie)
-    def test_login_first(self,emile):
-        self.login.goto_login_first().goto_authorization_delete().goto_register().set_password().confirm_password().set_emile(emlie)
-        print("success")
+    # #第一次安装APP，第一次登录用例
+    # @pytest.mark.parametrize('emile',emlie)
+    # def test_login_first(self,emile):
+    #     self.login.goto_login_first().goto_authorization_delete().goto_register().set_password().confirm_password().set_emile(emlie)
 
 #     #非第一次安装，第一次登录，删除数据用例
 #     @pytest.mark.parametrize('emile', emlie)
