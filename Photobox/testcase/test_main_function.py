@@ -80,4 +80,3 @@ class TestMainFunction():
         firstfolder_t = self.login.get_folder_name_and_number()[0]
         last_number = self.login.main_move(firstfolder_t).select_folder("新建文件夹").get_folder_numbertest(firstfolder_t)
         assert last_number == "0"
-
